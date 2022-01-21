@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;700;800&display=swap');
 
 
 
 $white: #fff;
+$black: #000;
+$bg-gradient: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+$bg-gradient-safe:rgb(50,100,255);
 
 
 html {
@@ -11,7 +14,7 @@ html {
 
 body {
     background-color:#000;
-    color: black;
+    color: $white;
     font-size: 16px;
     // font-family: 'Marcellus', serif;
     font-family: 'Mulish', sans-serif;
@@ -20,6 +23,12 @@ body {
 i {
     color: $white;
     font-size: 24px;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
 
 .header {
@@ -36,7 +45,7 @@ i {
     list-style: none;
     padding-left: 0;
     &-item {
-        margin: 0 1.5rem;
+        margin: 0 2.5rem;
     }
     &-link {
         text-decoration: none;
@@ -50,7 +59,8 @@ i {
             width: 100%;
             height: .2rem;
             margin-top: .5rem;
-            background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+            background: $bg-gradient-safe;
+            background: $bg-gradient;
             border-radius: 5rem;
         }
 
@@ -80,6 +90,112 @@ i {
             transform: scale(1.5);
         }
     }
+}
+
+.section-banner {
+    border-bottom: .1rem solid #2f2e2e;
+    position: relative;
+    overflow: hidden;
+    &__image {
+        position: absolute;
+        right: 0;
+        height: 76.4rem;
+        width: 95.5rem;
+        z-index: -1;
+    }
+}
+.banner {
+    height: 76.4rem;
+    max-width: 56.2rem;
+    padding-top: 12.2rem;
+    padding-bottom: 20.3rem;
+    box-shadow: 100px 0px 100px #000000;
+    background-color: $black;
+    &__title {
+        font-family: 'Marcellus', serif;
+        font-size: 8rem;
+        line-height: 7.5rem;
+    }
+    &-info {
+        font-weight: 800;
+        margin-bottom: 3.2rem;
+        &__year {
+            margin-right: 1.8rem;
+        }
+        &__age {
+            margin-right: 1.8rem;
+            position: relative;
+            width: 6rem;
+            display: inline-block;
+            text-align: center;
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2.4rem;
+                background-image: url(images/age.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: calc(50% - 1.2rem);
+                left: 0;
+                right: 0;
+            }
+        }
+        &__time {
+            margin-right: 6.1rem;
+        }
+    }
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #C2C2C2;
+        margin-bottom: 3.5rem;
+    }
+    &-control {
+        &__btn {
+            background-color: transparent;
+            border: none;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-weight: 800;
+            border-radius: 10rem;
+            padding: 1.5rem 3rem;
+            font-family: 'Mulish', sans-serif;
+            cursor: pointer;
+        }
+        &__btn-main {
+            background: $bg-gradient-safe;
+            background: $bg-gradient;
+            color: $white;
+            box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+            margin-right: 3rem;
+            transition: .2s ease box-shadow;
+            &:hover {
+                box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+            }
+        }
+        &__btn-more {
+            background-color: #fff;
+            color: #010101;
+            transition: .2s ease background-color, .2s ease color;
+            &:hover {
+                color: $white;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.fa-star {
+    color: #FFB800;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.fa-play {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 

@@ -3,14 +3,14 @@
   <head></head><script src="https://kit.fontawesome.com/5967ed30a9.js" crossorigin="anonymous"></script>
   <title>Online TV</title>
   <style>
-     @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;700&display=swap");
+     @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;700;800&display=swap");
 html {
   font-size: 10px;
 }
 
 body {
   background-color: #000;
-  color: black;
+  color: #fff;
   font-size: 16px;
   font-family: "Mulish", sans-serif;
 }
@@ -18,6 +18,12 @@ body {
 i {
   color: #fff;
   font-size: 24px;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 .header {
@@ -35,7 +41,7 @@ i {
   padding-left: 0;
 }
 .nav-item {
-  margin: 0 1.5rem;
+  margin: 0 2.5rem;
 }
 .nav-link {
   text-decoration: none;
@@ -50,6 +56,7 @@ i {
   width: 100%;
   height: 0.2rem;
   margin-top: 0.5rem;
+  background: #3264ff;
   background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
   border-radius: 5rem;
 }
@@ -75,6 +82,111 @@ i {
 }
 .control-btn:hover {
   transform: scale(1.5);
+}
+
+.section-banner {
+  border-bottom: 0.1rem solid #2f2e2e;
+  position: relative;
+  overflow: hidden;
+}
+.section-banner__image {
+  position: absolute;
+  right: 0;
+  height: 76.4rem;
+  width: 95.5rem;
+  z-index: -1;
+}
+
+.banner {
+  height: 76.4rem;
+  max-width: 56.2rem;
+  padding-top: 12.2rem;
+  padding-bottom: 20.3rem;
+  box-shadow: 100px 0px 100px #000000;
+  background-color: #000;
+}
+.banner__title {
+  font-family: "Marcellus", serif;
+  font-size: 8rem;
+  line-height: 7.5rem;
+}
+.banner-info {
+  font-weight: 800;
+  margin-bottom: 3.2rem;
+}
+.banner-info__year {
+  margin-right: 1.8rem;
+}
+.banner-info__age {
+  margin-right: 1.8rem;
+  position: relative;
+  width: 6rem;
+  display: inline-block;
+  text-align: center;
+}
+.banner-info__age::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2.4rem;
+  background-image: url(images/age.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: calc(50% - 1.2rem);
+  left: 0;
+  right: 0;
+}
+.banner-info__time {
+  margin-right: 6.1rem;
+}
+.banner__text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #C2C2C2;
+  margin-bottom: 3.5rem;
+}
+.banner-control__btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 800;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+}
+.banner-control__btn-main {
+  background: #3264ff;
+  background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+  color: #fff;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  margin-right: 3rem;
+  transition: 0.2s ease box-shadow;
+}
+.banner-control__btn-main:hover {
+  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+}
+.banner-control__btn-more {
+  background-color: #fff;
+  color: #010101;
+  transition: 0.2s ease background-color, 0.2s ease color;
+}
+.banner-control__btn-more:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.fa-star {
+  color: #FFB800;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.fa-play {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
   </style>
   <body>
@@ -101,6 +213,19 @@ i {
         </ul>
       </div>
     </header>
+    <section class="section-banner"> <img class="section-banner__image" src="/src/images/banner_bgi.png" alt="banner">
+      <div class="container"> 
+        <div class="banner"> 
+          <h1 class="banner__title">Zack Snyder's Justice League</h1>
+          <div class="banner-info"> <span class="banner-info__year">2021</span><span class="banner-info__age"> 18+</span><span class="banner-info__time">4h 2min</span><span class="banner-info__rating">8.8 <i class="fas fa-star"></i></span></div>
+          <p class="banner__text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+          <div class="banner-control">
+            <button class="banner-control__btn banner-control__btn-main"> <i class="fas fa-play"></i> Watch</button>
+            <button class="banner-control__btn banner-control__btn-more"> More information</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer"> </div>
     </footer>
