@@ -84,6 +84,36 @@ i {
   transform: scale(1.5);
 }
 
+.section__h2 {
+  font-size: 2.8rem;
+  line-height: 2rem;
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 4.7rem;
+  padding-top: 6rem;
+}
+.section__h2::before {
+  content: "";
+  display: block;
+  width: 0.8rem;
+  height: 3.5rem;
+  background: #3264ff;
+  border-radius: 5rem;
+  background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+  position: absolute;
+  left: 0;
+  top: 5.5rem;
+}
+.section__h2-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.9rem;
+}
+
+.fa-chevron-right {
+  margin-left: 1rem;
+}
+
 .section-banner {
   border-bottom: 0.1rem solid #2f2e2e;
   position: relative;
@@ -92,18 +122,16 @@ i {
 .section-banner__image {
   position: absolute;
   right: 0;
-  height: 76.4rem;
-  width: 95.5rem;
+  height: 100%;
+  width: 58%;
   z-index: -1;
 }
 
 .banner {
-  height: 76.4rem;
   max-width: 56.2rem;
   padding-top: 12.2rem;
   padding-bottom: 20.3rem;
   box-shadow: 100px 0px 100px #000000;
-  background-color: #000;
 }
 .banner__title {
   font-family: "Marcellus", serif;
@@ -187,6 +215,41 @@ i {
 .fa-play {
   font-size: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.movies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movies-item {
+  background-color: #000;
+}
+.movies__link {
+  filter: drop-shadow(0px 0px 0px rgba(44, 176, 249, 0));
+  transition: 0.2s ease filter;
+}
+.movies__link:hover {
+  filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
+}
+.movies__img {
+  border-radius: 2rem;
+}
+.movies__btn {
+  border: none;
+  border-radius: 10rem;
+  padding: 1.5rem 3.4rem;
+  margin-top: 5.5rem;
+  cursor: pointer;
+  background: #3264ff;
+  background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+  color: #fff;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  margin-right: 3rem;
+  transition: 0.2s ease box-shadow;
+}
+.movies__btn:hover {
+  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
 }/*# sourceMappingURL=style.css.map */
   </style>
   <body>
@@ -213,7 +276,7 @@ i {
         </ul>
       </div>
     </header>
-    <section class="section-banner"> <img class="section-banner__image" src="/src/images/banner_bgi.png" alt="banner">
+    <section class="section-banner"> <img class="section-banner__image" src="../src/images/banner_bgi.png" alt="banner">
       <div class="container"> 
         <div class="banner"> 
           <h1 class="banner__title">Zack Snyder's Justice League</h1>
@@ -222,6 +285,38 @@ i {
           <div class="banner-control">
             <button class="banner-control__btn banner-control__btn-main"> <i class="fas fa-play"></i> Watch</button>
             <button class="banner-control__btn banner-control__btn-more"> More information</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section"> 
+      <div class="container"> 
+        <div class="h2 section__h2"><a class="section__h2-link" href="#">Trending TV Shows <i class="fas fa-chevron-right"></i></a></div>
+        <div class="movies"> 
+          <div class="movies-item"> <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/posters/poster_01.png " alt=""></a></div>
+          <div class="movies-item">                <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/posters/poster_02.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/posters/poster_03.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/posters/poster_04.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/posters/poster_05.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/posters/poster_06.png " alt=""></a></div>
+        </div>
+        <div class="h2 section__h2"><a class="section__h2-link" href="#">Trending Movies <i class="fas fa-chevron-right"></i></a></div>
+        <div class="movies"> 
+          <div class="movies-item"> <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/movies/movie_01.png " alt=""></a></div>
+          <div class="movies-item">                <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/movies/movie_02.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/movies/movie_03.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/movies/movie_04.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/movies/movie_05.png " alt=""></a></div>
+          <div class="movies-item">  <a class="movies__link" href="#"> <img class="movies__img" src="../src/images/movies/movie_06.png " alt=""></a></div>
+        </div>
+        <button class="movies__btn">See more</button>
+      </div>
+      <section class="section"> </section>
+      <div class="container"> 
+        <div class="h2 section__h2"><a class="section__h2-link" href="#">Popular Genres <i class="fas fa-chevron-right"></i></a></div>
+        <div class="genres"> 
+          <div class="genres-item genres-item_romance"> <img src="../src/images/genres/romance.svg" alt="Romance">
+            <h3 class="genres__title">Romance</h3>
           </div>
         </div>
       </div>
