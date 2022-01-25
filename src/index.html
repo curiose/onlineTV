@@ -250,6 +250,67 @@ i {
 }
 .movies__btn:hover {
   box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.genres-item {
+  flex: 0 0 24%;
+  border-radius: 2rem;
+  padding-top: 4.5rem;
+  margin-bottom: 2.7rem;
+}
+.genres-item_romance {
+  background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+}
+.genres-item_drama {
+  background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+}
+.genres-item_history {
+  background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+}
+.genres-item_action {
+  background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+}
+.genres-item_sci-fi {
+  background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+}
+.genres-item_horror {
+  background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+}
+.genres-item_comedy {
+  background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+}
+.genres-item_documentary {
+  background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+}
+.genres__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actors-item {
+  flex: 0 0 14%;
+}
+.actors__title {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.actors__img {
+  background-color: #C4C4C4;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
   </style>
   <body>
@@ -317,6 +378,51 @@ i {
         <div class="genres"> 
           <div class="genres-item genres-item_romance"> <img src="../src/images/genres/romance.svg" alt="Romance">
             <h3 class="genres__title">Romance</h3>
+          </div>
+          <div class="genres-item genres-item_drama"> <img src="../src/images/genres/drama.svg" alt="Drama">
+            <h3 class="genres__title">Drama</h3>
+          </div>
+          <div class="genres-item genres-item_history"> <img src="../src/images/genres/history.svg" alt="Historical">
+            <h3 class="genres__title">Historical</h3>
+          </div>
+          <div class="genres-item genres-item_action"><img src="../src/images/genres/action.svg" alt="Action">
+            <h3 class="genres__title">Action</h3>
+          </div>
+          <div class="genres-item genres-item_sci-fi"> <img src="../src/images/genres/sci-fi.svg" alt="Sci-fi">
+            <h3 class="genres__title">Sci-fi</h3>
+          </div>
+          <div class="genres-item genres-item_horror"> <img src="../src/images/genres/horror.svg" alt="Horror">
+            <h3 class="genres__title">Horror</h3>
+          </div>
+          <div class="genres-item genres-item_comedy"> <img src="../src/images/genres/comedy.svg" alt="Comedy">
+            <h3 class="genres__title">Comedy</h3>
+          </div>
+          <div class="genres-item genres-item_documentary"> <img src="../src/images/genres/documentary.svg" alt="Documentary">
+            <h3 class="genres__title">Documentary</h3>
+          </div>
+        </div>
+      </div>
+      <section class="section"> </section>
+      <div class="container"> 
+        <div class="h2 section__h2"><a class="section__h2-link" href="#">Popular Actors & Directors <i class="fas fa-chevron-right"></i></a></div>
+        <div class="actors"> 
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor_01.png " alt="Samantha Bowen"></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor_02.png " alt="Rhys Birch"></a>
+            <h3 class="actors__title">Rhys Birch</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor_03.png " alt="James Holloway"></a>
+            <h3 class="actors__title">James Holloway</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor_04.png " alt="Joshua Walton"></a>
+            <h3 class="actors__title">Joshua Walton</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor_05.png " alt="Patrick Elliott"></a>
+            <h3 class="actors__title">Patrick Elliott</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor_06.png " alt="Morgan O'Neill"></a>
+            <h3 class="actors__title">Morgan O'Neill</h3>
           </div>
         </div>
       </div>
